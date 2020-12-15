@@ -1,0 +1,39 @@
+.currentTemp {
+  background-color: rgba(0, 0, 0, 0.4);
+  max-width: 850px;
+  margin: 0 auto;
+  height: 250px;
+  color: white;
+}
+.info {
+  padding-left: 10px;
+}
+
+.main_info {
+  margin: 0 auto;
+  width: 80%;
+
+  height: 65%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.city_info {
+  display: flex;
+}
+
+.iconwrapper {
+  align-self: center;
+}
+.temps {
+  height: 35%;
+  padding-left: 10px;
+}
+.additional_info {
+  font-weight: 900;
+}
+@media (max-width: 700px) {
+  .main_info {
+    width: 100%;
+  }
+}
