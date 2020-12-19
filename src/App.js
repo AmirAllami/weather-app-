@@ -55,8 +55,8 @@ export default class App extends Component {
     this.setState({ city: this.state.city2 }, () => this.callApi());
   }
   async callApi() {
-    const url1 = `http://api.openweathermap.org/data/2.5/forecast/daily?q=${this.state.city}&appid=97a812996e1d3836d9ad739bbb5072d0&units=${this.state.unit}`;
-    const url2 = `http://api.openweathermap.org/data/2.5/weather?q=${this.state.city}&appid=97a812996e1d3836d9ad739bbb5072d0&units=${this.state.unit}`;
+    const url1 = `https://api.openweathermap.org/data/2.5/forecast/daily?q=${this.state.city}&appid=97a812996e1d3836d9ad739bbb5072d0&units=${this.state.unit}`;
+    const url2 = `https://api.openweathermap.org/data/2.5/weather?q=${this.state.city}&appid=97a812996e1d3836d9ad739bbb5072d0&units=${this.state.unit}`;
     console.log(url1);
     let response = await axios.get(url1);
     this.setState({ dataNextDays: response });
